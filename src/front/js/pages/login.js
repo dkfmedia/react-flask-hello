@@ -13,6 +13,8 @@ export const Login = () => {
 		actions.login(email, password)
 	}
 
+	const navigate = useNavigate()
+
 	if (store.token && store.token !== "" && store.token !== undefined ) {
             navigate("/profile") 
 	} 
